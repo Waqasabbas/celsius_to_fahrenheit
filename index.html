@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <h1>Celsius To Farheneit</h1>
+            </div>
+        </div>
+        <div class="section">
+            <div class="row">
+                <form>
+                    <input type="number" id="temp" name="temp" placeholder="Temperature">
+
+                    <div class="dropdown">
+                        <input type="button" id="conversion" name="conversion" value="Convert From">
+                        <div class="dropdown-menu">
+                            <input type="button" id="c_to_f" name="c_to_f" value="Celsius to Fahrenheit">
+                            <input type="button" id="f_to_c" name="f_to_c" value="Fahrenheit to Celsius">
+                        </div>
+                    </div>
+
+                    <input type="submit" id="submit" name="submit" value="Convert">
+                </form>
+                <div class="value-box">
+                    <p><span id="inp"></span> <span id="inititial_degree"></span> <span id="value"></span> <span id="final_degree"></span> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
